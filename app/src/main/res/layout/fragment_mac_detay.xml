@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.macDetayFragment">
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp">
+
+
+            <ImageView
+                android:id="@+id/DetailHomeTeamImage"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:padding="4dp"
+                android:layout_marginStart="30dp"
+                android:src="@drawable/fenerbahce"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/DetailHomeTeamNameText"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text="Fenerbahçe"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@+id/DetailHomeTeamImage"
+                app:layout_constraintTop_toBottomOf="@+id/DetailHomeTeamImage" />
+
+            <TextView
+                android:id="@+id/DetailHomeTeamDetailResultText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.22"
+                app:layout_constraintStart_toEndOf="@+id/DetailHomeTeamImage"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.495"
+                android:padding="4dp"/>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                android:textStyle="normal"
+                android:padding="4dp"
+                app:layout_constraintBottom_toBottomOf="@+id/DetailHomeTeamDetailResultText"
+                app:layout_constraintStart_toEndOf="@+id/DetailHomeTeamDetailResultText"
+                app:layout_constraintTop_toTopOf="@+id/DetailHomeTeamDetailResultText" />
+
+            <TextView
+                android:id="@+id/DetailAwayTeamDetailResultText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:padding="4dp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView2"
+                app:layout_constraintStart_toEndOf="@+id/textView2"
+                app:layout_constraintTop_toTopOf="@+id/textView2" />
+
+            <ImageView
+                android:id="@+id/DetailAwayTeamImage"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+
+
+                android:padding="4dp"
+                android:layout_marginEnd="30dp"
+                android:src="@drawable/galatasaray"
+                app:layout_constraintBottom_toBottomOf="@+id/DetailHomeTeamImage"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/DetailAwayTeamNameText"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text="Galatasaray"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@+id/DetailAwayTeamImage"
+                app:layout_constraintTop_toBottomOf="@+id/DetailAwayTeamImage" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#A6A2A2"
+                android:padding="1dp"
+                android:text=" MS "
+                android:textSize="8sp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toEndOf="@+id/DetailHomeTeamDetailResultText"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="70dp"
+                android:background="#918E8E"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/textView4"
+                tools:layout_editor_absoluteX="8dp" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+
+
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/takvimiconu"
+                app:layout_constraintStart_toStartOf="@+id/view"
+                app:layout_constraintTop_toBottomOf="@+id/view" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TARİH"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toTopOf="@+id/DetailTakvimText"
+                app:layout_constraintStart_toStartOf="@+id/DetailTakvimText" />
+            <TextView
+                android:id="@+id/DetailTakvimText"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:text="2022-02-06"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+                app:layout_constraintStart_toEndOf="@+id/imageView4"
+                app:layout_constraintTop_toTopOf="@+id/imageView4" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="128dp"
+                android:src="@drawable/stadyumicon"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+                app:layout_constraintEnd_toEndOf="@+id/view"
+                app:layout_constraintTop_toBottomOf="@+id/view"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="STADYUM"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toTopOf="@+id/stadyumText"
+                app:layout_constraintStart_toStartOf="@+id/stadyumText"
+                app:layout_constraintTop_toTopOf="@+id/textView6" />
+
+            <TextView
+                android:id="@+id/stadyumText"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:text="Istanbul Basaksehir Fatih Terim "
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+                app:layout_constraintStart_toEndOf="@+id/imageView5"
+                app:layout_constraintTop_toTopOf="@+id/imageView5" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/futbol_nav"
+    app:startDestination="@id/baglayiciFragment">
+    <fragment
+        android:id="@+id/baglayiciFragment"
+        android:name="com.example.macsonuclari.view.BaglayiciFragment"
+        android:label="fragment_baglayici"
+        tools:layout="@layout/fragment_baglayici" >
+        <action
+            android:id="@+id/action_baglayiciFragment_to_macDetayFragment2"
+            app:destination="@id/macDetayFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/macDetayFragment2"
+        android:name="com.example.macsonuclari.view.macDetayFragment"
+        android:label="fragment_mac_detay"
+        tools:layout="@layout/fragment_mac_detay" >
+        <argument
+            android:name="homeTeamName"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="awayTeamName"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="homeTeamResult"
+            app:argType="integer" />
+        <argument
+            android:name="awayTeamResult"
+            app:argType="integer" />
+        <argument
+            android:name="stadyum"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="tarih"
+            app:argType="string"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_macDetayFragment2_to_baglayiciFragment"
+            app:destination="@id/baglayiciFragment" />
+    </fragment>
+</navigation>
